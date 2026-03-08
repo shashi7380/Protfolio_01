@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #f1f1f1;
+                padding: 20px;
+                font-family: Arial;
+            }
+
+            /* Center website */
+            .main {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 50px;
+                word-break: break-all;
+            }
+
+            .row {
+                margin: 8px -16px;
+            }
+
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+                padding: 8px;
+            }
+
+            /* Create four equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 25%;
+            }
+
+            /* Clear floats after rows */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Content */
+            .content {
+                background-color: white;
+                padding: 10px;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 900px) {
+                .column {
+                    width: 50%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(18, 18, 62);
+            }
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li {
+                list-style: none;
+                margin: 0 23px;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+            nav ul li a:hover {
+                color: rgb(153, 153, 226);
+                font-size: 1.01rem;
+            }
+            .all-browsers {
+                margin: 0;
+                padding: 5px;
+                background-color: lightgray;
+            }
+
+            .all-browsers > h1,
+            .browser {
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .browser {
+                background: white;
+            }
+
+            .browser > h2,
+            p {
+                margin: 4px;
+                font-size: 90%;
+            }
+
+            footer {
+                text-align: center;
+                padding: 3px;
+                background-color: DarkSalmon;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left" style="color: white">Shahi's Portfolio</div>
+                <div class="right"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="index1.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- MAIN (Center website) -->
+        <div class="main">
+            <h1>MYLOGO.PORTFOLIO</h1>
+            <hr />
+
+            <h2>PORTFOLIO</h2>
+            <p>Resize the browser window to see the responsive effect.</p>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img
+                            src="mountains.jpg"
+                            alt="Mountains"
+                            style="width: 100%"
+                        />
+                        <h3>My Mountains is a very beautiful place</h3>
+                        <p>
+                            Mountains are massive landforms rising significantly
+                            above their surroundings, featuring steep slopes and
+                            sharp or rounded summits, covering one-fifth of
+                            Earth's land surface. Formed primarily through
+                            tectonic plate collisions or volcanic activity, they
+                            act as critical "water towers" for billions, harbor
+                            25% of biodiversity, and regulate global climate
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img
+                            src="lights.jpg"
+                            alt="Lights"
+                            style="width: 100%"
+                        />
+                        <h3>My Lights is a very beautiful place</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                            Temporibus necessitatibus sea ei, at tantas oporteat
+                            nam. Lorem ipsum dolor sit amet, tempor prodesset
+                            eos no.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img
+                            src="nature.jpg"
+                            alt="Nature"
+                            style="width: 100%"
+                        />
+                        <h3>My Nature is a very beautiful place</h3>
+                        <p>
+                            Mountains are complex, high-elevation landforms that
+                            act as critical ecosystems, containing a diverse
+                            range of natural, geological, and biological
+                            elements. They are characterized by steep slopes,
+                            high peaks, and distinct vertical zones that change
+                            with altitud
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img
+                            src="mountains (1).jpg"
+                            alt="Mountains"
+                            style="width: 100%"
+                        />
+                        <h3>My Mountains is a very beautiful place</h3>
+                        <p>
+                            Mountains are complex, high-elevation landforms that
+                            act as critical ecosystems, containing a diverse
+                            range of natural, geological, and biological
+                            elements. They are characterized by steep slopes,
+                            high peaks, and distinct vertical zones that change
+                            with altitud
+                        </p>
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+
+            <div class="content">
+                <img src="p3.jpg" alt="Bear" style="width: 100%" />
+                <h3>My Bear is a very beautiful</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                    Temporibus necessitatibus sea ei, at tantas oporteat nam.
+                    Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                    Temporibus necessitatibus sea ei, at tantas oporteat nam.
+                    Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                </p>
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+        <h1>The article and footer elements + CSS</h1>
+
+        <article class="all-browsers">
+            <h1>Most Popular Browsers</h1>
+            <article class="browser">
+                <h2>Google Chrome</h2>
+                <p>
+                    Google Chrome is a web browser developed by Google, released
+                    in 2008. Chrome is the world's most popular web browser
+                    today!
+                </p>
+            </article>
+            <article class="browser">
+                <h2>Mozilla Firefox</h2>
+                <p>
+                    Mozilla Firefox is an open-source web browser developed by
+                    Mozilla. Firefox has been the second most popular web
+                    browser since January, 2018.
+                </p>
+            </article>
+            <article class="browser">
+                <h2>Microsoft Edge</h2>
+                <p>
+                    Microsoft Edge is a web browser developed by Microsoft,
+                    released in 2015. Microsoft Edge replaced Internet Explorer.
+                </p>
+            </article>
+        </article>
+
+        <footer>
+            <p>
+                &copy;2026 www.shashiprotfolio.com||All Rights Reserved<br />
+                <a href="shashikant442017@gmail.com"
+                    >shashikant442017@gmail.com</a
+                >
+            </p>
+        </footer>
+    </body>
+</html>
